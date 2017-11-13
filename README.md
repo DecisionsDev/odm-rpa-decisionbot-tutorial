@@ -1,6 +1,6 @@
 # ODM RPA Decision Bot Tutorial
 
-This tutorial describes step-by-step how to create an IBM ODM Decision Bot for IBM RPA with Automation Anywhere from
+This tutorial describes how to create an IBM ODM Decision Bot for IBM RPA with Automation Anywhere from
 an existing Decision Service.
 
 ## Table of Contents
@@ -54,7 +54,7 @@ the [odm-decision-forms](https://github.com/ODMDev/odm-decision-forms#usage) sec
 
 ## Deploy the Decision Form
 
-Install the `odm-decision-forms` package:
+Install the odm-decision-forms package:
 
 ```bash
 npm install -g odm-decision-forms
@@ -67,6 +67,9 @@ odm-decision-forms
 ```
 
 Open your browser at [http://localhost:3000](http://localhost:3000) to see a list of the available forms.
+
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Forms Home.png" width="75%"></img>
+
 Select the decision form you want to automate. Eg: http://localhost:3000/ruleapp/CompleteInvoice_Ruleapp/CompleteInvoice_Ruleset
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png?v=2" width="75%"></img>
@@ -88,7 +91,7 @@ This opens the MetaBot editor. Click *Add Screen* and select the screen correspo
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Screen.png" width="50%"></img>
 
-We now edit a *Logic* object, listing the steps required to enter input data in the form based on the MetaBot
+We then edit a *Logic* object, listing the steps required to enter input data in the form based on the MetaBot
 input variables, execute the Decision Service, and map the output result to the MetaBot output variables.
 
 * Click on the *Logic* tab

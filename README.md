@@ -29,15 +29,14 @@ knowledge of the underlying implementation.
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png?v=2" width="75%"></img>
 
-* Open the Automation Anywhere Client
+* Open *Automation Anywhere Client*
 * Go to the *MetaBot* tab and click *New*
 * Set a name for the MetaBot. Eg: Invoicing Decision Bot
 * In the Applications list, Select *Internet Explorer* and click *Create*
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/New MetaBot.png" width="30%"></img>
 
-* This opens the MetaBot editor.
-* Click 'Add Screen' and select the screen corresponding to the navigator you opened on the decision form
+* This opens the MetaBot editor. Click 'Add Screen' and select the screen corresponding to the navigator displaying your Decision Form
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Screen.png" width="50%"></img>
 
@@ -53,19 +52,17 @@ knowledge of the underlying implementation.
    * Give a name to the variable, similar to the field name
    * Select 'Input' as the *Parameter Type*
    * Enter a default Value in the value field, to be used for testing
+   * Repeat for each field in the 'Request' panel
    
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Input Variable.png" width="75%"></img>
 
-   * Repeat for each field in the 'Request' panel
 * Create an output variable corresponding for each output field of the decision form (Response panel):
    * Click 'Add'
    * Give a name to the variable, similar to the field name
    * Select 'Output' as the *Parameter Type*
    * Enter a default Value in the value field, to be used for testing
-
-<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Output Variable.png" width="75%"></img>
-
    * Repeat for each field in the 'Response' panel
+
 * In our example, you will end up with 6 variables:
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/MetaBot Variables.png" width="25%"></img>
@@ -90,11 +87,12 @@ Once the variables are created, you must map each input / output field of the De
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Map TextField In.png" width="75%"></img>
 
 You can then ask the MetaBot to execute the decision
-   * Click the *Run Decision* button. This will highlight it in red
-   * Set the 'Select Action' field to *Click*
-   * Click *Add*
+
+* Click the *Run Decision* button. This will highlight it in red
+* Set the 'Select Action' field to *Click*
+* Click *Add*
    
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Run Decision.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Run Decision.png" width="75%"></img>
 
 You must map each output field of the Decision Service to a corresponding output variable.
 
@@ -126,15 +124,15 @@ You must map each output field of the Decision Service to a corresponding output
 From your Main task, you first need to open the browser to the correct URL: drag and drop the *Web Recorder / Open Browser*
 command in your task, and enter the Decision Form URL.
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Open Browser.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Open Browser.png" width="75%"></img>
    
 Now, drag and drop your Decision Bot from the *MetaBots* list, and map the variables of your main task to the ones of your metabot.
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Invoke MetaBot.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Invoke MetaBot.png" width="75%"></img>
 
 Your main task should look like this:
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Main Bot.png" width="100%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Main Bot.png" width="100%"></img>
 
 
 # Issues and contributions

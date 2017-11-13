@@ -21,26 +21,18 @@ Then, we demonstrate how to create an RPA *metabot* to encapsulate the invocatio
 Finally, we show how the *metabot* can be easily called from an RPA task by the RPA author without requiring any 
 knowledge of the underlying implementation.
 
-## Creating a Decision Bot
+## Deploy the Decision Form
 
-### Creating a Decision Service using IBM Decision Composer (experimental)
-
-
-
-### Creating a Decision Service using IBM ODM 8.9.0
-
-### Deploying the Decision Bot
-
-## Wrapping the Decision Bot in an RPA MetaBot
+## Create the Decision Bot
 
 * Open Internet Explorer and navigate to the decision form you want to automate. eg: http://localhost:3000/ruleapp/CompleteInvoice_Ruleapp/CompleteInvoice_Ruleset
 
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png" width="75%"></img>
 
-* Open the Automation Anywhere Client
-* Go to the *MetaBot* tab abd click *New*
-* Set a name for the MetaBot. Eg: VAT and Discount Decision Service
-* In the Applications list, Select *Internet Explorer* and click *Create*
+   * Open the Automation Anywhere Client
+   * Go to the *MetaBot* tab and click *New*
+   * Set a name for the MetaBot. Eg: VAT and Discount Decision Service
+   * In the Applications list, Select *Internet Explorer* and click *Create*
 
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/New MetaBot.png" width="75%"></img>
 
@@ -129,7 +121,7 @@ You must map each output field of the Decision Service to a corresponding output
 
 * Save your logic
 
-## Invoking the MetaBot from an RPA task.
+## Invoke the Decision Bot from an RPA task.
 
 From your Main task, you first need to open the browser to the correct URL: drag and drop the *Web Recorder / Open Browser*
 command in your task, and enter the Decision Form URL.

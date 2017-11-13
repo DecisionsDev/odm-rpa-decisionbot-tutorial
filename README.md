@@ -31,7 +31,7 @@ knowledge of the underlying implementation.
 
 * Open the Automation Anywhere Client
 * Go to the *MetaBot* tab and click *New*
-* Set a name for the MetaBot. Eg: VAT and Discount Decision Service
+* Set a name for the MetaBot. Eg: Invoicing Decision Bot
 * In the Applications list, Select *Internet Explorer* and click *Create*
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/New MetaBot.png" width="30%"></img>
@@ -39,7 +39,7 @@ knowledge of the underlying implementation.
 * This opens the MetaBot editor.
 * Click 'Add Screen' and select the screen corresponding to the navigator you opened on the decision form
 
-<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Screen.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Screen.png" width="50%"></img>
 
 * Click on the *Logic* tab
 * Click *Add Logic*

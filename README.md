@@ -27,7 +27,7 @@ knowledge of the underlying implementation.
 
 * Open Internet Explorer and navigate to the decision form you want to automate. eg: http://localhost:3000/ruleapp/CompleteInvoice_Ruleapp/CompleteInvoice_Ruleset
 
-<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png?v=2" width="75%"></img>
 
 * Open the Automation Anywhere Client
 * Go to the *MetaBot* tab and click *New*

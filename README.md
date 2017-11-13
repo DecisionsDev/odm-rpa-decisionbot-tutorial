@@ -73,6 +73,9 @@ Select the decision form you want to automate. Eg: http://localhost:3000/ruleapp
 
 ## Create the Decision Bot
 
+Our Decision Bot is implemented as an Automation Anywhere MetaBot, which encapsulates the invocation of the Decision Form
+and exposes input and output variables, mapped to/from the Decision Service input/output parameters.
+
 * Keep the Decision Form window open and close any other tab or browser instance.
 * Open *Automation Anywhere Client*
 * Go to the *MetaBot* tab and click *New*
@@ -81,9 +84,12 @@ Select the decision form you want to automate. Eg: http://localhost:3000/ruleapp
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/New MetaBot.png" width="30%"></img>
 
-This opens the MetaBot editor. Click 'Add Screen' and select the screen corresponding to the navigator displaying your Decision Form
+This opens the MetaBot editor. Click *Add Screen* and select the screen corresponding to the navigator displaying your Decision Form
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Screen.png" width="50%"></img>
+
+We now edit a *Logic* object, listing the steps required to enter input data in the form based on the MetaBot
+input variables, execute the Decision Service, and map the output result to the MetaBot output variables.
 
 * Click on the *Logic* tab
 * Click *Add Logic*. This opens the *Logic Editor*, showing the Internet Explorer window

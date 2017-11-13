@@ -134,7 +134,7 @@ Now, drag and drop your Decision Bot from the *MetaBots* list, and map the varia
 
 Your main task should look like this:
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Main Bot.png" width="75%"></img>
+   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Main Bot.png" width="100%"></img>
 
 
 # Issues and contributions

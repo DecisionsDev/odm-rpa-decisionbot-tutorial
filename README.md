@@ -70,9 +70,11 @@ Open your browser at [http://localhost:3000](http://localhost:3000) to see a lis
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Forms Home.png" width="75%"></img>
 
-Select the decision form you want to automate. Eg: http://localhost:3000/ruleapp/CompleteInvoice_Ruleapp/CompleteInvoice_Ruleset
+From the *Version* column, select the decision form you want to automate. Eg: http://localhost:3000/ruleapp/CompleteInvoice_Ruleapp/CompleteInvoice_Ruleset
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png?v=2" width="75%"></img>
+
+You can test the form, entering some value on the Request side and clicking *Run Decision* to get the results.
 
 ## Create the Decision Bot
 

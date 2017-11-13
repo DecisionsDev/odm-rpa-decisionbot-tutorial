@@ -54,7 +54,7 @@ the [odm-decision-forms](https://github.com/ODMDev/odm-decision-forms#usage) sec
 
 ## Deploy the Decision Form
 
-Install the odm-decision-forms package:
+Install the `odm-decision-forms` package:
 
 ```bash
 npm install -g odm-decision-forms
@@ -66,8 +66,8 @@ Run the Decision Form server.
 odm-decision-forms
 ```
 
-* Open your browser at [http://localhost:3000](http://localhost:3000) to see a list of the available forms.
-* Select the decision form you want to automate. Eg: http://localhost:3000/ruleapp/CompleteInvoice_Ruleapp/CompleteInvoice_Ruleset
+Open your browser at [http://localhost:3000](http://localhost:3000) to see a list of the available forms.
+Select the decision form you want to automate. Eg: http://localhost:3000/ruleapp/CompleteInvoice_Ruleapp/CompleteInvoice_Ruleset
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png?v=2" width="75%"></img>
 
@@ -81,7 +81,7 @@ odm-decision-forms
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/New MetaBot.png" width="30%"></img>
 
-* This opens the MetaBot editor. Click 'Add Screen' and select the screen corresponding to the navigator displaying your Decision Form
+This opens the MetaBot editor. Click 'Add Screen' and select the screen corresponding to the navigator displaying your Decision Form
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Screen.png" width="50%"></img>
 
@@ -90,31 +90,31 @@ odm-decision-forms
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Logic Editor.png" width="75%"></img>
 
-* On the right hand side, expand the *Variable Manager* panel
-* Create an input variable corresponding to each input field of the decision form (*Request* panel):
+On the right hand side, expand the *Variable Manager* panel
+Create an input variable corresponding to each input field of the decision form (*Request* panel):
    * Click 'Add'
    * Give a name to the variable, similar to the field name
    * Select 'Input' as the *Parameter Type*
    * Enter a default Value in the value field, to be used for testing
    * Repeat for each field in the 'Request' panel
    
-<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Input Variable.png" width="75%"></img>
+   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Input Variable.png" width="60%"></img>
 
-* Create an output variable corresponding for each output field of the decision form (*Response* panel):
+Create an output variable corresponding for each output field of the decision form (*Response* panel):
    * Click 'Add'
    * Give a name to the variable, similar to the field name
    * Select 'Output' as the *Parameter Type*
    * Enter a default Value in the value field, to be used for testing
    * Repeat for each field in the 'Response' panel
 
-* In our example, you will end up with 6 variables:
+In our example, you will end up with 6 variables:
 
-<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/MetaBot Variables.png" width="25%"></img>
+   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/MetaBot Variables.png" width="25%"></img>
 
 Once the variables are created, you must map each input / output field of the Decision Service to a corresponding variable.
 
 * Map a Select (combo box):
-   * Click the Select. This will highlight it in red
+   * Click the Select element. This will highlight it in red.
    * Set the *Select Action* field to *SelectItemByText*
    * Set the *Select Item* field to the variable you want to map (you can hit F2 to see the list of available variables)
    * Click *Add*
@@ -122,7 +122,7 @@ Once the variables are created, you must map each input / output field of the De
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Map Select In.png" width="60%"></img>
 
 * Map a Text field (input type="text"):
-   * Click in the text field. This will highlight it in red
+   * Click the text field. This will highlight it in red.
    * Set the *Select Action* field to *SetText*
    * Check the *Keystrokes* checkbox - this is mandatory for odm-decision-forms
    * Set the 'Enter Text' field to the variable you want to map (you can hit F2 to see the list of available variables)
@@ -130,7 +130,7 @@ Once the variables are created, you must map each input / output field of the De
 
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Map TextField In.png" width="60%"></img>
 
-You can then ask the MetaBot to execute the decision
+You can then ask the MetaBot to execute the decision:
 
 * Click the *Run Decision* button. This will highlight it in red
 * Set the 'Select Action' field to *Click*

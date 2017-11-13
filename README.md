@@ -76,12 +76,12 @@ From the *Version* column, select the decision form you want to automate. Eg: ht
 
 You can test the form, entering some value on the Request side and clicking *Run Decision* to get the results.
 
-## Create the Decision Bot
+## Implement the Decision Bot
 
 Our Decision Bot is implemented as an Automation Anywhere MetaBot, which encapsulates the invocation of the Decision Form
 and exposes input and output variables, mapped to/from the Decision Service input/output parameters.
 
-Let's create the MetaBot:
+### Create a MetaBot
 
 * Keep the Decision Form window open and close any other tab or browser instance.
 * Open *Automation Anywhere Client*
@@ -95,6 +95,8 @@ This opens the MetaBot editor. Click *Add Screen* and select the screen correspo
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Screen.png" width="50%"></img>
 
+### Create a Logic object
+
 We then edit a *Logic* object, defining in/out variables of the metabot, listing the steps required to enter input data 
 in the form based on the MetaBot input variables, executing the Decision Service, and mapping the output result to the MetaBot output variables.
 
@@ -102,6 +104,8 @@ in the form based on the MetaBot input variables, executing the Decision Service
 * Click *Add Logic*. This opens the *Logic Editor*, showing the Internet Explorer window
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Logic Editor.png" width="75%"></img>
+
+### Add Variables
 
 On the right hand side, expand the *Variable Manager* panel
 
@@ -125,7 +129,10 @@ In our example, you will end up with 6 variables:
 
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/MetaBot Variables.png" width="25%"></img>
 
-Once the variables are created, you must map each input / output field of the Decision Service to a corresponding variable.
+### Map input variables to input data
+
+You must now create an input action for each input field of the Decision Service and fill it from a corresponding input 
+variable.
 
 * Map a Select (combo box):
    * Click the Select element. This will highlight it in red.
@@ -144,6 +151,8 @@ Once the variables are created, you must map each input / output field of the De
 
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Map TextField In.png" width="60%"></img>
 
+### Trigger the Decision Service
+
 You can then ask the MetaBot to execute the decision:
 
 * Click the *Run Decision* button. This will highlight it in red
@@ -151,6 +160,8 @@ You can then ask the MetaBot to execute the decision:
 * Click *Add*
    
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Run Decision.png" width="55%"></img>
+
+### Get results and map to output variables
 
 You must map each output field of the Decision Service to a corresponding output variable.
 
@@ -171,7 +182,9 @@ You must map each output field of the Decision Service to a corresponding output
 
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Map TextField Out.png" width="75%"></img>
 
-Once variables are all created and mapped to input / output fields, you should see an 'Action List' similar to this:
+### Save the logic
+
+Once the variables are all created and mapped to input / output fields, you should see an 'Action List' similar to this:
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Action List.png" width="100%"></img>
 

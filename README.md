@@ -124,7 +124,9 @@ You must map each output field of the Decision Service to a corresponding output
 From your Main task, you first need to open the browser to the correct URL: drag and drop the *Web Recorder / Open Browser*
 command in your task, and enter the Decision Form URL.
 
+<blockquote>
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Open Browser.png" width="75%"></img>
+</blockquote>
    
 Now, drag and drop your Decision Bot from the *MetaBots* list, and map the variables of your main task to the ones of your metabot.
 

@@ -6,7 +6,9 @@ an existing Decision Service.
 ## Table of Contents
 
   - [Summary](#summary)
-  - [Prerequisites](#prerequisites)
+  - [Before you begin](#before-you-begin)
+     - [Required software](#required-software)
+     - [Pre-deployed Decision Service](#pre-deployed-decision-service)
   - [Deploy the Decision Form](#deploy-the-decision-form)
   - [Create the Decision Bot](#create-the-decision-bot)
   - [Invoke the Decision Bot from an RPA task.](#invoke-the-decision-bot-from-an-rpa-task)
@@ -28,17 +30,27 @@ Then, we demonstrate how to create an RPA *MetaBot* to encapsulate the invocatio
 Finally, we show how the *MetaBot* can be easily called from an RPA task by the RPA author without requiring any 
 knowledge of the underlying implementation.
 
-## Prerequisites
+## Before you begin
+
+### Required software
+
+Here are the software you need to install in order to run the tutorial:
+
+* [IBM Robotic Process Automation with Automation Anywhere](https://www.ibm.com/cloud-computing/products/digital-process-automation/robotic-process-automation/) (IBM RPA)  leverages ODM to make it possible to automate desktop tasks that involve human judgements that can be captured as ODM decisions.
+* [IBM Operational Decision Manager](http://www-03.ibm.com/software/products/en/odm) (ODM) provides a complete, easy-to-use system for automating day-to-day operational decisions and allows business people and IT staff to collaborate on business rules by using an interface and a language that are comfortable and intuitive for both.
+* [NodeJS](https://nodejs.org/en/download/) 8.x or greater: needed to run the npm package below
+* [ODM Decision Forms](https://www.npmjs.com/package/odm-decision-forms): an open source npm package provided by the ODM development team, 
+that generates a form on top of a Decision Service.
+
+### Pre-deployed Decision Service
 
 You must have already deployed a Decision Service that you want to use in your RPA tasks to IBM ODM Decision Server.
 
 As an example, you may deploy the Invoicing sample decision service provided in the [odm-rpa-invoicing-sample](https://github.com/ODMDev/odm-rpa-invoicing-sample) demo.
 
-We assume that your ODM servers are running at [http://localhost:9080](http://localhost:9080). If this is not the case,
-you must adapt the options of the [ODM Decision Form](https://github.com/ODMDev/odm-decision-forms) server, as described in
-the Usage section.
-
-You must also have NodeJS installed.
+We assume that your ODM Decision Server is running at [http://localhost:9080](http://localhost:9080). If this is not the case,
+you must adapt the options of the `odm-decision-forms` command line, as described in
+the [odm-decision-forms](https://github.com/ODMDev/odm-decision-forms#usage) section.
 
 ## Deploy the Decision Form
 
@@ -145,11 +157,11 @@ You must map each output field of the Decision Service to a corresponding output
 
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Map TextField Out.png" width="75%"></img>
 
-* Once variables are all created and mapped to input / output fields, you should see an 'Action List' similar to this:
+Once variables are all created and mapped to input / output fields, you should see an 'Action List' similar to this:
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Action List.png" width="100%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Action List.png" width="100%"></img>
 
-* Save your logic
+Save your logic (Save Button) and give it a name. Eg: Invoicing Decision Service.
 
 ## Invoke the Decision Bot from an RPA task.
 

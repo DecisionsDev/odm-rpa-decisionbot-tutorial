@@ -104,6 +104,7 @@ in the form based on the MetaBot input variables, executing the Decision Service
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Logic Editor.png" width="75%"></img>
 
 On the right hand side, expand the *Variable Manager* panel
+
 Create an input variable corresponding to each input field of the decision form (*Request* panel):
    * Click 'Add'
    * Give a name to the variable, similar to the field name

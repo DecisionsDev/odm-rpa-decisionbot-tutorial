@@ -5,6 +5,11 @@ an existing Decision Service.
 
 ## Table of Contents
 
+  - [Summary](#summary)
+  - [Prerequisites](#prerequisites)
+  - [Deploy the Decision Form](#deploy-the-decision-form)
+  - [Create the Decision Bot](#create-the-decision-bot)
+  - [Invoke the Decision Bot from an RPA task.](#invoke-the-decision-bot-from-an-rpa-task)
 
 ---
 

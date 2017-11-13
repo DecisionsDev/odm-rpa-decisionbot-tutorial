@@ -115,7 +115,7 @@ You must map each output field of the Decision Service to a corresponding output
 
 * Once variables are all created and mapped to input / output fields, you should see an 'Action List' similar to this:
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Action List.png" width="75%"></img>
+   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Action List.png" width="100%"></img>
 
 * Save your logic
 

@@ -27,25 +27,25 @@ knowledge of the underlying implementation.
 
 * Open Internet Explorer and navigate to the decision form you want to automate. eg: http://localhost:3000/ruleapp/CompleteInvoice_Ruleapp/CompleteInvoice_Ruleset
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png" width="75%"></img>
 
-   * Open the Automation Anywhere Client
-   * Go to the *MetaBot* tab and click *New*
-   * Set a name for the MetaBot. Eg: VAT and Discount Decision Service
-   * In the Applications list, Select *Internet Explorer* and click *Create*
+* Open the Automation Anywhere Client
+* Go to the *MetaBot* tab and click *New*
+* Set a name for the MetaBot. Eg: VAT and Discount Decision Service
+* In the Applications list, Select *Internet Explorer* and click *Create*
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/New MetaBot.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/New MetaBot.png" width="30%"></img>
 
 * This opens the MetaBot editor.
 * Click 'Add Screen' and select the screen corresponding to the navigator you opened on the decision form
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Screen.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Screen.png" width="75%"></img>
 
 * Click on the *Logic* tab
 * Click *Add Logic*
 * This opens the *Logic Editor*, showing the Internet Explorer window
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Logic Editor.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Logic Editor.png" width="75%"></img>
 
 * On the right hand side, expand the *Variable Manager* panel
 * Create an input variable corresponding for each input field of the decision form (Request panel):
@@ -54,7 +54,7 @@ knowledge of the underlying implementation.
    * Select 'Input' as the *Parameter Type*
    * Enter a default Value in the value field, to be used for testing
    
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Input Variable.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Input Variable.png" width="75%"></img>
 
    * Repeat for each field in the 'Request' panel
 * Create an output variable corresponding for each output field of the decision form (Response panel):
@@ -63,12 +63,12 @@ knowledge of the underlying implementation.
    * Select 'Output' as the *Parameter Type*
    * Enter a default Value in the value field, to be used for testing
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Output Variable.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Add Output Variable.png" width="75%"></img>
 
    * Repeat for each field in the 'Response' panel
 * In our example, you will end up with 6 variables:
 
-   <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/MetaBot Variables.png" width="75%"></img>
+<img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/MetaBot Variables.png" width="25%"></img>
 
 Once the variables are created, you must map each input / output field of the Decision Service to a corresponding variable.
 

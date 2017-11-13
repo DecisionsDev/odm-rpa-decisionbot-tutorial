@@ -1,6 +1,7 @@
 # ODM RPA Decision Bot Tutorial
 
-This tutorial describes how to create and invoke an IBM ODM Decision Bot for IBM RPA with Automation Anywhere.
+This tutorial describes step-by-step how to create an IBM ODM Decision Bot for IBM RPA with Automation Anywhere from
+an existing Decision Service.
 
 ## Table of Contents
 
@@ -12,23 +13,50 @@ This tutorial describes how to create and invoke an IBM ODM Decision Bot for IBM
 In the demo [odm-rpa-invoicing-sample](https://github.com/ODMDev/odm-rpa-invoicing-sample), we show how
 to delegate the decision logic of an RPA task to an IBM ODM Decision Bot, using the [ODM decision forms generator](https://www.npmjs.com/package/odm-decision-forms).
 
-In this tutorial, we show how to create that **Decision Bot** for **IBM RPA with Automation Anywhere** from scratch.
+In this tutorial, we show how to create that **Decision Bot** for **IBM RPA with Automation Anywhere** from scratch
+and step-by-step.
 
-We first show how to create a Decision Service using IBM Decision Composer without writing a single line of code.
+We first show how to deploy a [Decision Form](https://github.com/ODMDev/odm-decision-forms) on top of an ODM Decision Service.
 
-Then, we demonstrate how to create an RPA *metabot* to encapsulate the invocation of the created Decision Service.
+Then, we demonstrate how to create an RPA *MetaBot* to encapsulate the invocation of the Decision Form.
 
-Finally, we show how the *metabot* can be easily called from an RPA task by the RPA author without requiring any 
+Finally, we show how the *MetaBot* can be easily called from an RPA task by the RPA author without requiring any 
 knowledge of the underlying implementation.
+
+## Prerequisites
+
+You must have already deployed a Decision Service that you want to use in your RPA tasks to IBM ODM Decision Server.
+
+As an example, you may deploy the Invoicing sample decision service provided in the [odm-rpa-invoicing-sample](https://github.com/ODMDev/odm-rpa-invoicing-sample) demo.
+
+We assume that your ODM servers are running at [http://localhost:9080](http://localhost:9080). If this is not the case,
+you must adapt the options of the [ODM Decision Form](https://github.com/ODMDev/odm-decision-forms) server, as described in
+the Usage section.
+
+You must also have NodeJS installed.
 
 ## Deploy the Decision Form
 
-## Create the Decision Bot
+Install the odm-decision-forms package:
 
-* Open Internet Explorer and navigate to the decision form you want to automate. eg: http://localhost:3000/ruleapp/CompleteInvoice_Ruleapp/CompleteInvoice_Ruleset
+```bash
+npm install -g odm-decision-forms
+```
+
+Run the Decision Form server.
+
+```bash
+odm-decision-forms
+```
+
+* Open your browser at [http://localhost:3000](http://localhost:3000) to see a list of the available forms.
+* Select the decision form you want to automate. Eg: http://localhost:3000/ruleapp/CompleteInvoice_Ruleapp/CompleteInvoice_Ruleset
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png?v=2" width="75%"></img>
 
+## Create the Decision Bot
+
+* Keep the Decision Form window open and close any other tab or browser instance.
 * Open *Automation Anywhere Client*
 * Go to the *MetaBot* tab and click *New*
 * Set a name for the MetaBot. Eg: Invoicing Decision Bot

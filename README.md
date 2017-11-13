@@ -1,6 +1,6 @@
 # ODM RPA Decision Bot Tutorial
 
-This tutorial describes how to create an IBM ODM Decision Bot for IBM RPA with Automation Anywhere from
+This tutorial describes how to create an IBM ODM Decision Bot for IBM RPA with Automation Anywhere on top of
 an existing Decision Service.
 
 ## Table of Contents

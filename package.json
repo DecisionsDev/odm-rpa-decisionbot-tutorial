@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "author": "Antoine Melki",
   "license": "Apache 2.0",
-  "description": "This tutorial describes how to create and invoke an IBM ODM Decision Bot for IBM RPA with Automation Anywhere",
+  "description": "This tutorial describes step-by-step how to create an IBM ODM Decision Bot for IBM RPA with Automation Anywhere from an existing Decision Service.",
   "repository": {
     "type": "git",
     "url": "https://github.com/ODMDev/odm-rpa-decisionbot-tutorial.git"

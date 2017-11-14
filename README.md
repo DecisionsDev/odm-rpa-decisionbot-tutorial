@@ -137,7 +137,7 @@ In our example, you will end up with 6 variables:
 
    <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/MetaBot Variables.png" width="25%"></img>
 
-### Fill in input data with input variables
+### Fill in input data from input variables
 
 You must now create an input action for each input field of the Decision Service and fill it from a corresponding input 
 variable.

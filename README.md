@@ -5,7 +5,7 @@ a Decision Service deployed in ODM Decision Server.
 
 ## Table of Contents
 
-  - [Summary](#summary)
+  - [Overview](#overview)
   - [Before you begin](#before-you-begin)
      - [Required software](#required-software)
      - [Pre-deployed Decision Service](#pre-deployed-decision-service)
@@ -22,9 +22,9 @@ a Decision Service deployed in ODM Decision Server.
 
 ---
 
-## Summary
+## Overview
 
-In the demo [odm-rpa-invoicing-sample](https://github.com/ODMDev/odm-rpa-invoicing-sample), we show how
+In the demo [odm-rpa-invoicing-sample](https://github.com/ODMDev/odm-rpa-invoicing-sample), we've shown how
 to delegate the decision logic of an RPA task to an IBM ODM Decision Service, using the [ODM decision forms generator](https://www.npmjs.com/package/odm-decision-forms)
 called from an RPA task.
 

@@ -14,7 +14,7 @@ a Decision Service deployed in ODM Decision Server.
      - [Create a MetaBot](#create-a-metabot)
      - [Create a Logic object](#create-a-logic-object)
      - [Add Variables](#add-variables)
-     - [Map input variables to input data](#map-input-variables-to-input-data)
+     - [Fill in input data from input variables](#fill-in-input-data-from-input-variables)
      - [Trigger the Decision Service](#trigger-the-decision-service)
      - [Get results and map to output variables](#get-results-and-map-to-output-variables)
      - [Save the logic](#save-the-logic)

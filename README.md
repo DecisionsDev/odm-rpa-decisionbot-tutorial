@@ -58,7 +58,7 @@ As an example, you may deploy the Invoicing sample decision service provided in 
 
 We assume that your ODM Decision Server is running at [http://localhost:9080](http://localhost:9080). If this is not the case,
 you must adapt the options of the `odm-decision-forms` command line, as described in
-the [odm-decision-forms](https://github.com/ODMDev/odm-decision-forms#usage) section.
+the [Usage](https://github.com/ODMDev/odm-decision-forms#usage) section.
 
 ## Deploy the Decision Form
 

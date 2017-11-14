@@ -25,16 +25,17 @@ a Decision Service deployed in ODM Decision Server.
 ## Summary
 
 In the demo [odm-rpa-invoicing-sample](https://github.com/ODMDev/odm-rpa-invoicing-sample), we show how
-to delegate the decision logic of an RPA task to an IBM ODM Decision Bot, using the [ODM decision forms generator](https://www.npmjs.com/package/odm-decision-forms).
+to delegate the decision logic of an RPA task to an IBM ODM Decision Service, using the [ODM decision forms generator](https://www.npmjs.com/package/odm-decision-forms)
+called from an RPA task.
 
-In this tutorial, we show how to create that **Decision Bot** for **IBM RPA with Automation Anywhere** from scratch
-and step-by-step.
+In this tutorial, we give a step-by-step description of how to create a reusable **Decision Bot** for **IBM RPA with Automation Anywhere** 
+encapsulating the invocation of a Decision Service via odm-decisions-forms.
 
 We first show how to deploy a [Decision Form](https://github.com/ODMDev/odm-decision-forms) on top of an ODM Decision Service.
 
-Then, we demonstrate how to create an RPA *MetaBot* to encapsulate the invocation of the Decision Form.
+Then, we demonstrate how to create a reusable RPA *MetaBot* to encapsulate the invocation of the Decision Form.
 
-Finally, we show how the *MetaBot* can be easily called from an RPA task by the RPA author without requiring any 
+Finally, we show how the *MetaBot* can be easily invoked from an RPA task by the RPA author without requiring any 
 knowledge of the underlying implementation.
 
 ## Before you begin

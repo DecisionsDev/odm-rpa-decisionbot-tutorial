@@ -82,7 +82,7 @@ From the *Version* column, select the decision form you want to automate. Eg: ht
 
 <img src="https://raw.githubusercontent.com/ODMDev/odm-rpa-decisionbot-tutorial/master/screenshots/Decision Form.png?v=2" width="75%"></img>
 
-You can test the form, entering some value on the Request side and clicking *Run Decision* to get the results.
+You can test the form, entering some values on the *Request* side and clicking *Run Decision* to get the results in the *Response* side.
 
 ## Implement the Decision Bot
 
